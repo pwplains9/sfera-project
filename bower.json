@@ -1,0 +1,85 @@
+{
+  "name": "newProjectBundle",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "*",
+    "fancybox": "latest",
+    "bootstrap-grid-css": "latest",
+    "animate.css": "latest",
+    "jquery.maskedinput": "latest",
+    "jquery-selectric": "latest",
+    "owl.carousel": "latest",
+    "hover": "latest",
+    "flexslider": "latest",
+    "nouislider": "latest",
+    "air-datepicker": "latest"
+  },
+  "overrides": {
+    "air-datepicker": {
+      "src/js/vendors/air-datepicker": [
+        "./dist/**"
+      ]
+    },
+    "jquery": {
+      "src/js/vendors/jquery": [
+        "./dist/jquery.min.js"
+      ]
+    },
+    "fancybox": {
+      "src/js/vendors/fancybox": [
+        "./dist/jquery.fancybox.css",
+        "./dist/jquery.fancybox.js"
+      ]
+    },
+    "bootstrap-grid-css": {
+      "src/css/grid": [
+        "./grid.css"
+      ]
+    },
+    "animate.css": {
+      "src/css/animate": [
+        "./animate.css",
+        "./animate.min.css"
+      ]
+    },
+    "jquery.maskedinput": {
+      "src/js/vendors/mask": [
+        "./dist/jquery.maskedinput.min.js"
+      ]
+    },
+    "jquery-selectric": {
+      "src/js/vendors/selectric": [
+        "./public/jquery.selectric.min.js",
+        "./public/selectric.css"
+      ]
+    },
+    "owl.carousel": {
+      "src/js/vendors/owl": [
+        "./dist/owl.carousel.js",
+        "./dist/assets/*"
+      ]
+    },
+    "hover": {
+      "src/css/hover": [
+        "./css/hover.css",
+        "./css/hover-min.css"
+      ]
+    },
+    "flexslider": {
+      "src/js/vendors/flex": [
+        "./flexslider.css",
+        "./jquery.flexslider.js",
+        "./jquery.flexslider-min.js",
+        "./images/*",
+        "./fonts/*"
+      ]
+    },
+    "nouislider": {
+      "src/js/vendors/nouislider": [
+        "./distribute/nouislider.js",
+        "./distribute/nouislider.min.css",
+        "./distribute/nouislider.min.js"
+      ]
+    }
+  }
+}

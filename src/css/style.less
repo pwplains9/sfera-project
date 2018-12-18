@@ -1,0 +1,78 @@
+@import "grid/grid.css";
+@import "fonts";
+@import "lessVariables";
+@import "utilityMixins";
+@import "gradientsMixins";
+@import "baseMixins";
+@import "sprites";
+@import "svgSprite";
+@import "template/elements";
+@import "../../node_modules/aos/dist/aos.css";
+
+/****************************
+* SPRITES
+****************************/
+@site-sprite: dogs;
+@sLength: length(@site-sprite);
+.sprite-loop (@i) when (@i > 0) {
+  @sp: extract(@site-sprite, @i);
+  .sprite--@{sp} {
+    .sprite(@@sp);
+  }
+  .sprite-loop(@i - 1);
+}
+
+/*
+* Bad ie styles
+*/
+#badIE {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #673AB7;
+
+  h1 {
+    position: absolute;
+    top: 48%;
+    width: 100%;
+    color: @white;
+    .t-c;
+  }
+}
+
+.sprite-loop(@sLength);
+
+html {
+  font-size: @default-font-px-size;
+
+  body {
+    font-size: @default-font-rem-size;
+    color: @default-font-color;
+  }
+}
+
+body, html {
+  font-family: @default-font-family;
+  -webkit-text-size-adjust: none;
+  .set-size(100%);
+}
+
+@import "../blocks/welcome/welcome.less";
+
+/*-------------------------ШАПКА САЙТА-------------------*/
+
+@import "../blocks/header/style.less";
+
+/*------------------------ОБЛАСТЬ КОНТЕНТА--------------------*/
+
+.main {
+
+}
+
+/*------------------------ПОДВАЛ----------------------*/
+
+@import "../blocks/footer/style.less";
+
+.icon {
+  color: red;
+}

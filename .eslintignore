@@ -1,0 +1,8 @@
+dist/
+gulp/
+src/js/vendors/
+gulpfile.js
+environments.config.js
+webpack.dev.babel.js
+webpack.prod.babel.js
+webpack.babel.js

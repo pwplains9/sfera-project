@@ -1,0 +1,18 @@
+include ../../../node_modules/bemto.pug/bemto
+include ../page/page
+include ../icon/icon
+include ../scripts/scripts
+
+doctype html
+html(lang="ru-RU")
+  include ../head/index
+  +page
+    include ../loader/index
+    +b.HEADER.header
+      block header
+    block content
+
+    +b.footer
+      block footer
+    +b.FOOTER
+      +scripts(['./js/vendors/badIe.js','manifest.bundle.js', 'node.bundle.js', 'vendor.bundle.js', 'js.bundle.js'])

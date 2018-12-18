@@ -1,0 +1,129 @@
+/*
+* Стандартные примеси для базовых свойств
+*/
+
+.b-l {
+  float: left;
+}
+
+.b-r {
+  float: right;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-n {
+  display: none;
+}
+
+.d-b-i {
+  display: inline-block;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.t-l {
+  text-align: left;
+}
+
+.t-r {
+  text-align: right;
+}
+
+.t-j {
+  text-align: justify;
+}
+
+.t-d-n {
+  text-decoration: none;
+}
+
+.t-d-u {
+  text-decoration: underline;
+}
+
+.t-d-c {
+  text-decoration: line-through;
+}
+
+.p-a {
+  position: absolute;
+}
+
+.p-r {
+  position: relative;
+}
+
+.p-f {
+  position: fixed;
+}
+
+.d-f {
+  display: flex;
+}
+
+.m-a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.res {
+  width: 100%;
+  height: auto;
+  .d-b;
+}
+
+.fancybox-lock {
+  overflow: hidden !important;
+  width: auto;
+}
+
+.fancybox-lock body {
+  overflow: inherit !important;
+}
+
+.fancybox-lock-test {
+  overflow-y: inherit !important;
+}
+
+/***************************
+* Для плагина анимации
+****************************/
+.wow {
+  visibility: hidden;
+}
+
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  &:hover {
+    .t-d-n;
+  }
+}
+
+.clearfix() {
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.is-clear {
+  .clearfix();
+}
